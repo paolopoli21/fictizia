@@ -1,0 +1,5 @@
+<p>{{ message }}</p>
+<input #etiqueta [(ngModel)] ="message">
+<button (click)="updateMessage(etiqueta.value)">Send message</button>
+<hr>
+<button (click)="cleanMessage()">Clean message</button>
