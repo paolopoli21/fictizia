@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'fictizia-messages',
@@ -6,18 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent implements OnInit {
-  public message: string = '';
+
+  @Input() public messages:string[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  public updateMessage(value: string) {
-    this.message = value;
-  }
-
-  cleanMessage(){
-    this.message = "";
-  }
-
+  
 }

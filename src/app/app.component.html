@@ -1,1 +1,4 @@
-<fictizia-messages></fictizia-messages>
+
+<fictizia-messages [messages]="messages"></fictizia-messages>
+
+<fictizia-text-button (actionClick) = "updateMessage($event)" [buttonLabel] ="'invia'"></fictizia-text-button>

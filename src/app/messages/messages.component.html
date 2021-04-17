@@ -1,5 +1,11 @@
-<p>{{ message }}</p>
-<input #etiqueta [(ngModel)] ="message">
+<!-- <p *ngFor="let message of messages" >
+    <span [ngClass] = "{'even': true}">
+        {{ message }}
+    </span>
+</p> -->
+
+<!-- <input #etiqueta [(ngModel)] ="message">
 <button (click)="updateMessage(etiqueta.value)">Send message</button>
-<hr>
-<button (click)="cleanMessage()">Clean message</button>
+<hr> -->
+<!-- <button (click)="cleanMessage()">Clean message</button> -->
+<p class="message" *ngFor="let message of messages">{{ message }}</p>
